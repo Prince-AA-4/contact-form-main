@@ -1,0 +1,110 @@
+:root{
+    --Green200lighter: hsl(148, 38%, 91%);
+    --Green600medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Grey500medium: hsl(186, 15%, 59%);
+    --Grey900darker: hsl(187, 24%, 22%);
+    --fontsize:1px;
+}
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#name input:hover{
+    cursor: pointer;
+    border-color:var(--Green600medium)
+}
+
+
+body{
+    background-color: var(--Green200lighter);
+    line-height: 1.6rem;
+}
+
+
+
+#contactForm{
+    background-color: white;
+    width: 500px;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius:5px;
+    font-family: Karla;
+}
+
+#name{
+    display:flex;
+    gap: 2rem;
+}
+
+.block-label{
+    display: block;
+}
+
+input{
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+button{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--Green600medium);
+    color: var(--White);
+    border-radius : 5px;
+    
+}
+
+#email-input, textarea{
+    width: 100%;
+}
+
+textarea{
+    height: 8rem;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#query-input{
+    display: flex;
+    gap: 2rem;
+}
+
+#query-input div{
+    border: 2px solid gray;
+    padding:0.8rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    
+}
+
+@media (max-width:400px){
+    #contactForm{
+        width:300px;
+    }
+
+
+    #name{
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #name input{
+        width: 100%;
+    }
+    #query-input{
+        flex-direction:column;
+        gap: 1rem;
+    }
+
+
+    
+}
